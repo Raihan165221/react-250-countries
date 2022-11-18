@@ -1,0 +1,14 @@
+.header {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 2px 0px 5px gray;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}

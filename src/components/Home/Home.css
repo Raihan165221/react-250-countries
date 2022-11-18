@@ -1,0 +1,33 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.countries-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.card-container {
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-container {
+        flex-direction: column-reverse;
+    }
+
+    .countries-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin-left: 5%;
+        /* margin-top: 120px; */
+    }
+
+    .card-container {
+        width: 100%;
+    }
+}
