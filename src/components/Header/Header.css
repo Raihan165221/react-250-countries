@@ -1,14 +1,17 @@
 .header {
     background-color: black;
-    padding: 20px;
     box-shadow: 2px 0px 5px gray;
     position: fixed;
     width: 100%;
     z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .header a {
-    margin-left: 15px;
+    margin-left: 25px;
     text-decoration: none;
     color: white;
 }

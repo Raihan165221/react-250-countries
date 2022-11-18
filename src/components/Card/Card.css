@@ -1,5 +1,23 @@
 .card {
     margin-top: 80px;
-    position: sticky;
+    position: fixed;
     padding-left: 10px;
+}
+
+#remove-btn {
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: azure;
+    background-color: black;
+}
+
+.visit {
+    color: #ff00bc;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        position: sticky;
+    }
 }

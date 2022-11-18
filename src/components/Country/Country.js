@@ -8,7 +8,7 @@ const Country = (props) => {
             <h1>{props.country.name.common}</h1>
             <h3>Captal: {props.country.capital}</h3>
             <p>Population: {props.country.population}</p>
-            <button className='btn' onClick={() => props.handleAddToCart(props.country)}>Add Country</button>
+            <button className='btn' onClick={() => props.handleAddToCart(props.country)}>Visit Country</button>
         </div>
     );
 };

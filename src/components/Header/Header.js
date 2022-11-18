@@ -4,17 +4,20 @@ import './Header.css';
 
 const Header = () => {
     let activeStyle = {
-        color: 'red',
+        color: '#6fbfff',
         fontWeight: 'bold',
     };
     return (
         <div className='header'>
-            <NavLink style={({ isActive }) =>
-                isActive ? activeStyle : undefined
-            } to='home'>Home</NavLink>
-            <NavLink style={({ isActive }) =>
-                isActive ? activeStyle : undefined
-            } to='contact'>Contact</NavLink>
+            <h2>Visit Countries</h2>
+            <div>
+                <NavLink style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                } to='home'>Home</NavLink>
+                <NavLink style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                } to='contact'>Contact</NavLink>
+            </div>
         </div>
     );
 };

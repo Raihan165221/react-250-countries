@@ -7,8 +7,14 @@ const Home = () => {
     const [countries, setCountries] = useCountries();
     const [cart, setCart] = useState([]);
     const handleAddTOCart = (addedCountry) => {
-        const newCart = [...cart, addedCountry];
-        setCart(newCart);
+        const exist = cart.find(country => country?.name?.common === addedCountry?.name?.common);
+        if (!exist) {
+            const newCart = [...cart, addedCountry];
+            setCart(newCart);
+        }
+        else {
+            alert('Already Added This Country')
+        }
     }
     const handleRemove = (addedCountry) => {
         console.log(addedCountry);
