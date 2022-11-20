@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Card.css'
 const Card = ({ cart, handleRemove }) => {
     let visit;
@@ -8,7 +9,7 @@ const Card = ({ cart, handleRemove }) => {
     else {
         visit = <div>
             <b>Thanks for Visit!!! Go Contact Button.</b><br />
-            <button className='go-contact'><a className='go-contact' href="/contact">Go Contact</a></button>
+            <button className='go-contact'><NavLink className='go-contact' to='/contact'>Go Contact</NavLink></button>
         </div>
     }
     return (
