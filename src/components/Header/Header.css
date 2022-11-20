@@ -2,6 +2,7 @@
     background-color: black;
     box-shadow: 2px 0px 5px gray;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1;
     color: white;

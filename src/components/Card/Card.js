@@ -6,7 +6,10 @@ const Card = ({ cart, handleRemove }) => {
         visit = <p>Please Visit Any Country!!!</p>
     }
     else {
-        visit = <b>Thanks for Visit!!!</b>
+        visit = <div>
+            <b>Thanks for Visit!!! Go Contact Button.</b><br />
+            <button className='go-contact'><a className='go-contact' href="/contact">Go Contact</a></button>
+        </div>
     }
     return (
         <div className='card'>
